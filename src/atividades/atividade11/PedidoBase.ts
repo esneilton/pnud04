@@ -8,7 +8,7 @@ export class PedidoBase implements Pedido {
         this.produtos.push(produto);
     }
     removerProduto(produto: Produto): void {
-        const index = this.produtos.findIndex(p => p.nome === produto.nome);
+        const index = this.produtos.findIndex(p => p === produto);
         if (index !== -1) {
             this.produtos.splice(index, 1);
         }
