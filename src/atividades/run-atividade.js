@@ -32,14 +32,3 @@ if (!argumento) {
 const scriptPath = `dist/atividades/atividade${argumento}.js`;
 
 executarScript(scriptPath);
-
-// Executa o script Node.js dinamicamente construído
-/*
-exec(`node ${scriptPath}`, (err, stdout, stderr) => {
-  if (err) {
-    console.error(`Erro ao executar o script: ${stderr}`);
-    process.exit(1);
-  }
-  console.log(stdout); // Mostra a saída do script
-});
-*/
